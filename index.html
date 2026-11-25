@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f2e9"><meta name="description" content="강아지의 짖음과 배변 실수, 이유를 이해하고 차분히 대처하는 초보 보호자 안내"><title>강아지의 마음을 읽는 첫걸음</title>
+<style>
+:root{--ink:#25362e;--muted:#68766e;--paper:#f6f2e9;--white:#fffdf8;--green:#315f49;--lime:#dceaa9;--orange:#efaa79;--line:#e3e2d8;--pale:#edf1e4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}button,a{font:inherit}.wrap{width:min(980px,calc(100% - 34px));margin:auto}.top{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.04em}.brand b{color:var(--green)}.tools{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:.88rem}.sound{border:1px solid var(--line);background:white;border-radius:99px;padding:7px 12px;cursor:pointer;color:var(--ink)}.progress{height:5px;background:#e4e2d8;border-radius:9px}.progress i{display:block;height:100%;width:0;background:var(--green);transition:width .3s}main{min-height:calc(100vh - 130px);display:grid;place-items:center;padding:28px 0 45px}.screen{display:none;width:100%;animation:arrive .3s}.screen.active{display:block}@keyframes arrive{from{opacity:.4;transform:translateY(7px)}to{opacity:1;transform:none}}.tag{display:inline-block;padding:6px 12px;border-radius:99px;background:#e7eddb;color:var(--green);font-size:.85rem;font-weight:800}.cover{min-height:620px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px}.cover h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.09;letter-spacing:-.07em;margin:19px 0}.cover h1 em{font-style:normal;color:var(--green)}.cover p{color:var(--muted);max-width:470px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;background:var(--green);color:#fff;padding:12px 19px;font-weight:800;cursor:pointer;text-decoration:none}.btn:hover{background:#244b38}.quiet{color:var(--muted);font-size:.86rem}.art{min-height:350px;position:relative;display:grid;place-items:center}.sun{position:absolute;right:5%;top:4%;width:min(320px,82%);aspect-ratio:1;border-radius:50%;background:var(--lime)}.dog-card{position:relative;z-index:1;width:min(300px,76%);aspect-ratio:.9;border-radius:48% 48% 25px 25px;background:#f0c49b;display:grid;place-items:center;box-shadow:0 20px 40px #354b351c}.dog{font-size:clamp(9rem,22vw,14rem);filter:drop-shadow(0 8px 2px #80613d25)}.speech{position:absolute;z-index:2;top:8%;left:1%;padding:11px 15px;border-radius:17px 17px 17px 4px;background:white;box-shadow:0 7px 20px #354b3518;font-weight:750}.loop{position:absolute;bottom:1%;right:0;z-index:2;padding:8px 12px;background:var(--green);color:white;border-radius:12px;font-size:.83rem;animation:bob 1.1s ease-in-out infinite alternate}@keyframes bob{to{transform:translateY(-7px)}}.head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:16px 0 21px}.head h2{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.1;letter-spacing:-.06em;margin:10px 0}.head p{margin:0;color:var(--muted)}.number{padding:7px 12px;background:#e7eddb;border-radius:99px;color:var(--green);font-weight:800;white-space:nowrap}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{border:1px solid var(--line);background:var(--white);border-radius:21px;padding:22px}.illustration{min-height:190px;display:grid;place-items:center;text-align:center;background:linear-gradient(140deg,#fff,#eef1e4)}.illustration .emoji{font-size:4rem;line-height:1.2}.illustration strong{display:block;margin-top:9px}.card h3{margin:0 0 7px}.card p{margin:0;color:var(--muted)}.keyline{display:inline-block;margin-top:12px;padding:8px 11px;border-radius:10px;background:#edf1e4;color:var(--green);font-weight:800}.example{background:#26352e;color:#f8f8ef;font:500 .95rem/1.8 ui-monospace,Consolas,monospace;white-space:pre-wrap}.narration{display:flex;flex-direction:column;justify-content:center}.voice{margin-top:11px;color:var(--green);font-size:.85rem;font-weight:750}.nav{display:flex;align-items:center;justify-content:space-between;margin-top:16px}.quiz-head{margin:12px 0 20px}.quiz-head h2,.summary h2{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;letter-spacing:-.06em;margin:10px 0}.quiz-head p{margin:0;color:var(--muted)}.question{display:none;border:1px solid var(--line);background:white;border-radius:21px;padding:23px;margin:13px 0}.question.active{display:block}.qnum{font-weight:850;color:var(--green);font-size:.86rem}.question h3{margin:8px 0 15px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:9px}.answer{padding:11px 13px;text-align:left;border:1px solid var(--line);border-radius:12px;background:white;cursor:pointer}.answer.selected{background:#edf1e4;border-color:var(--green)}.answer.correct{background:#edf7e5;border-color:#77a94b}.answer.incorrect{background:#fff0ec;border-color:#d98b72}.feedback{min-height:27px;font-weight:750}.result{display:none;padding:21px;border-radius:18px;background:#e7eddb}.result.show{display:block}.result h3{margin:0}.summary{max-width:800px;margin:25px auto}.summary h2{margin:15px 0 22px}.summary-list{display:grid;gap:10px;list-style:none;padding:0}.summary-list li{padding:14px 16px;background:white;border:1px solid var(--line);border-radius:14px}.summary-list b{color:var(--green)}.next-step{margin:18px 0;padding:20px;border-radius:18px;background:#f0e8dc}.next-step h3{margin:0 0 5px}.next-step p{margin:0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:18px 0 24px;color:var(--muted);font-size:.84rem}.foot{display:flex;justify-content:space-between;gap:12px}
+@media(max-width:680px){.cover{grid-template-columns:1fr;min-height:auto;padding:15px 0}.art{grid-row:1;min-height:280px}.cover-copy{grid-row:2;text-align:center}.cover p{margin-left:auto;margin-right:auto}.grid{grid-template-columns:1fr}.illustration{min-height:155px}.answers{grid-template-columns:1fr}.foot{flex-direction:column}.cover .quiet{display:block;margin-top:12px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style><style>.illustration img{display:block;width:100%;height:190px;object-fit:cover;border-radius:14px}.illustration:has(img){padding:12px;overflow:hidden}.source-note{position:absolute;z-index:4;right:0;bottom:-112px;width:min(310px,90%);padding:11px 13px;border:1px solid var(--line);border-radius:13px;background:#fffdf8eF;color:var(--muted);font-size:.72rem;line-height:1.5;box-shadow:0 5px 16px #354b3510}.source-note strong{color:var(--ink)}.source-note a{color:var(--green);text-decoration:underline;text-underline-offset:2px}.source-note div+div{margin-top:4px}@media(max-width:680px){.cover .art{margin-bottom:48px}.source-note{bottom:-43px;right:0}}</style></head>
+<body>
+<header class="wrap top"><div class="brand">꼬리 <b>곁</b></div><div class="tools"><span id="label">표지</span><button class="sound" id="music" aria-pressed="false" type="button">♫ 배경음 켜기</button><button class="sound" id="narration-toggle" aria-pressed="true" type="button">🔊 내레이션 끄기</button></div></header><div class="wrap progress"><i id="bar"></i></div>
+<main class="wrap">
+<section class="screen active" data-title="표지"><div class="cover"><div class="cover-copy"><span class="tag">처음이라 막막한 보호자를 위해</span><h1>강아지 행동,<br><em>이유부터</em> 알아봐요.</h1><p>짖음과 배변 실수 때문에 고민인가요? 혼내기 전에 강아지가 보내는 신호와 대처의 첫걸음을 함께 살펴봐요.</p><button class="btn" id="start">시작하기 →</button><span class="quiet">전체 6분 이내 · 개념 화면은 내레이션 후 자동 이동</span></div><div class="art" aria-label="강아지가 짖고 배변하는 행동을 표현한 그림"><div class="sun"></div><div class="speech" id="bubble">멍멍! 무슨 소리지?</div><div class="dog-card"><span class="dog">🐶</span></div><div class="loop" id="loop">창밖 자극 → 짖음 → 보호자 반응</div></div></div></section>
+<section class="screen lesson" data-title="행동의 이유"><div class="head"><div><span class="tag">첫 번째 · 신호 읽기</span><h2>행동에는 이유가 있어요.</h2><p>강아지는 말 대신 행동으로 필요한 것을 알려줘요.</p></div><span class="number">1 / 4</span></div><div class="grid"><div class="card illustration"><div><div class="emoji">🐶　💭　👀</div><strong>행동은 강아지의 표현</strong></div></div><div class="card"><h3>개념 + 한 줄</h3><p>짖음이나 실수만 보고 이유를 단정하기보다, 그 행동 전후의 상황을 함께 살펴봐요.</p><span class="keyline">행동 + 상황 = 이해의 실마리</span></div><div class="card example">관찰: 초인종이 울린다<br>행동: 강아지가 짖는다<br>기록: 시간·장소·직전 상황</div><div class="card narration"><h3>🔊 내레이션 1</h3><p>강아지는 말로 설명하는 대신 행동으로 감정이나 필요를 표현해요. 짖음은 낯선 소리에 놀랐거나, 관심을 원하거나, 불안하다는 신호일 수 있습니다. 배변 실수도 훈련이 아직 익숙하지 않거나 생활 리듬이 달라졌다는 단서일 수 있어요. 행동만 보고 혼내기보다 언제, 어디서, 직전에 무슨 일이 있었는지 관찰하면 원인을 찾는 데 도움이 됩니다.</p><span class="voice">내레이션이 끝나면 자동으로 다음 화면으로 이동합니다.</span></div></div><div class="nav"><span class="quiet">설명을 듣고 있어요.</span><button class="btn next">다음 →</button></div></section>
+<section class="screen lesson" data-title="짖음 살펴보기"><div class="head"><div><span class="tag">두 번째 · 짖음</span><h2>무엇을 향해 짖나요?</h2><p>짖기 직전의 자극과 짖은 뒤의 변화를 찾아봐요.</p></div><span class="number">2 / 4</span></div><div class="grid"><div class="card illustration"><div><div class="emoji">🔔　🐕　🪟</div><strong>소리와 창밖을 살펴요</strong></div></div><div class="card"><h3>개념 + 한 줄</h3><p>짖음을 멈추게 하기 전에 원인이 되는 자극과 강아지의 긴장을 줄여줘요.</p><span class="keyline">자극 낮추기 + 차분함 칭찬</span></div><div class="card example">초인종이 울려요<br>→ 창문·현관 자극 줄이기<br>→ 조용해진 순간 칭찬하기</div><div class="card narration"><h3>🔊 내레이션 2</h3><p>짖음이 시작되기 직전에 초인종이 울렸는지, 창밖에 사람이나 동물이 지나갔는지 살펴보세요. 창문을 가리거나 조용한 쉴 곳을 만들어 자극을 줄일 수 있어요. 잠깐 조용해진 순간 칭찬이나 간식으로 차분한 행동을 알려주세요. 큰소리로 혼내면 강아지가 보호자도 함께 짖는다고 받아들일 수 있습니다. 짖는 시간과 상황을 며칠 적어보면 반복되는 계기가 보일 수 있어요.</p><span class="voice">내레이션이 끝나면 자동으로 다음 화면으로 이동합니다.</span></div></div><div class="nav"><span class="quiet">설명을 듣고 있어요.</span><button class="btn next">다음 →</button></div></section>
+<section class="screen lesson" data-title="배변 살펴보기"><div class="head"><div><span class="tag">세 번째 · 배변 실수</span><h2>시간과 장소에 패턴이 있나요?</h2><p>일정을 돕고, 성공한 순간을 놓치지 않아요.</p></div><span class="number">3 / 4</span></div><div class="grid"><div class="card illustration"><div><div class="emoji">🕒　🐾　🧻</div><strong>배변 시간과 장소를 일정하게</strong></div></div><div class="card"><h3>개념 + 한 줄</h3><p>실수는 조용히 정리하고, 정해둔 장소에서 성공하면 바로 칭찬해요.</p><span class="keyline">성공 직후 칭찬과 보상</span></div><div class="card example">잠에서 깬 뒤 → 배변 장소 안내<br>식사 후 → 잠깐 기다려주기<br>성공하면 → 바로 칭찬하기</div><div class="card narration"><h3>🔊 내레이션 3</h3><p>잠에서 깬 뒤나 식사와 놀이를 마친 뒤에는 배변할 기회를 주세요. 같은 장소로 안내하고, 그곳에서 성공하면 바로 따뜻하게 칭찬합니다. 실수했을 때는 강아지를 혼내지 말고 냄새가 남지 않게 정리해요. 시간이 지난 뒤의 꾸중은 강아지가 배변 실수와 연결하기 어렵습니다. 실수가 반복되는 시간과 장소를 기록하면 일정이나 환경을 조정할 실마리를 찾을 수 있어요.</p><span class="voice">내레이션이 끝나면 자동으로 다음 화면으로 이동합니다.</span></div></div><div class="nav"><span class="quiet">설명을 듣고 있어요.</span><button class="btn next">다음 →</button></div></section>
+<section class="screen lesson" data-title="차분한 대처"><div class="head"><div><span class="tag">네 번째 · 작은 변화</span><h2>잘한 순간을 알려주세요.</h2><p>강아지가 원하는 행동을 했을 때 구체적으로 칭찬해요.</p></div><span class="number">4 / 4</span></div><div class="grid"><div class="card illustration"><div><div class="emoji">🌱　🐕　💛</div><strong>천천히, 같은 방법으로</strong></div></div><div class="card"><h3>개념 + 한 줄</h3><p>큰 변화를 기대하기보다 관찰하고, 편안하고 안전한 경험을 쌓게 해요.</p><span class="keyline">작은 성공을 알아보고 칭찬</span></div><div class="card example">기록 → 한 가지 방법 시도<br>→ 반응 살피기 → 차분한 순간 칭찬</div><div class="card narration"><h3>🔊 내레이션 4</h3><p>행동을 바꾸는 데는 시간이 걸릴 수 있어요. 오늘 관찰한 상황을 바탕으로 한 번에 한 가지 방법을 시도하고, 강아지가 어떻게 반응하는지 살펴보세요. 원하는 행동을 한 순간 바로 칭찬하면 어떤 행동이 좋은 결과를 가져오는지 배우는 데 도움이 됩니다. 갑자기 행동이 달라졌거나 통증, 잦은 배변 같은 건강 문제가 의심되면 수의사와 상의하세요. 이제 두 문제로 오늘 내용을 확인해 볼까요?</p><span class="voice">내레이션이 끝나면 퀴즈로 이동합니다.</span></div></div><div class="nav"><span class="quiet">설명을 듣고 있어요.</span><button class="btn next">퀴즈 풀기 →</button></div></section>
+<section class="screen" data-title="직접 해보기"><div class="quiz-head"><span class="tag">직접 해보기 · 객관식 2문제</span><h2>상황을 보고 골라봐요.</h2><p>퀴즈에서는 자동으로 넘어가지 않아요. 답을 선택하고 채점해 보세요.</p></div>
+<article class="question active"><span class="qnum">문제 1 / 2</span><h3>초인종이 울릴 때마다 강아지가 짖어요. 첫 번째로 해볼 일은?</h3><div class="answers"><button class="answer" data-ok="false">큰소리로 혼내서 멈추게 한다</button><button class="answer" data-ok="true">짖기 전 상황을 관찰하고 자극을 줄인다</button><button class="answer" data-ok="false">짖을 때마다 안아 올린다</button></div><p class="feedback" aria-live="polite"></p><button class="btn grade">채점하기</button></article>
+<article class="question"><span class="qnum">문제 2 / 2</span><h3>배변 실수를 발견했어요. 가장 좋은 대처는?</h3><div class="answers"><button class="answer" data-ok="false">한참 뒤에 혼낸다</button><button class="answer" data-ok="true">조용히 정리하고 성공한 순간 바로 칭찬한다</button><button class="answer" data-ok="false">배변 장소를 매일 바꾼다</button></div><p class="feedback" aria-live="polite"></p><button class="btn back">← 이전 문제</button> <button class="btn grade">채점하기</button></article>
+<div class="result" id="result" aria-live="polite"><h3 id="score"></h3><p id="score-note"></p><button class="btn" id="to-summary">정리 보기 →</button></div></section>
+<section class="screen summary" data-title="정리"><span class="tag">마지막 · 세 줄 요약</span><h2>이해하려는 마음이<br>좋은 첫걸음이에요.</h2><ul class="summary-list"><li><b>1. 이유를 살펴요.</b> 행동 전후의 시간·장소·상황을 관찰해요.</li><li><b>2. 차분히 도와요.</b> 짖음은 자극을 줄이고, 배변은 일정과 성공 경험을 도와요.</li><li><b>3. 작은 성공을 칭찬해요.</b> 변화는 천천히 쌓이고, 새 질문은 다음 관찰의 시작이에요.</li></ul><div class="next-step"><h3>다음에는 이렇게 해봐요</h3><p>이번 주에 짖음이나 배변 실수가 있었던 상황을 짧게 기록해 보세요. “왜 그랬을까?”라는 질문 하나가 해결의 실마리가 될 수 있어요.</p></div><button class="btn" id="restart">처음부터 다시 보기</button></section>
+</main><footer><div class="wrap foot"><span>꼬리 곁 · 행동을 이해하는 첫걸음</span><span>갑작스러운 행동 변화나 건강 이상이 의심되면 수의사와 상의하세요.</span></div></footer>
+<script>
+const screens=[...document.querySelectorAll('.screen')],lessons=[...document.querySelectorAll('.lesson')],bar=document.querySelector('#bar'),label=document.querySelector('#label');let current=0,timer=null,utter=null,narrationOn=true;
+function stopVoice(){clearTimeout(timer);if('speechSynthesis'in window)speechSynthesis.cancel()}
+function show(i){stopVoice();current=Math.max(0,Math.min(i,screens.length-1));screens.forEach((s,n)=>s.classList.toggle('active',n===current));label.textContent=screens[current].dataset.title;bar.style.width=(current/(screens.length-1)*100)+'%';if(lessons.includes(screens[current]))playNarration(screens[current]);scrollTo({top:0,behavior:'smooth'})}
+function playNarration(screen){const text=screen.querySelector('.narration p').textContent,state=screen.querySelector('.voice');function finish(){state.textContent='설명이 끝났어요. 다음 화면으로 이동합니다.';timer=setTimeout(()=>{if(current<4)show(current+1)},600)}function fallback(){state.textContent='설명을 읽어보세요. 약 35초 뒤 다음 화면으로 이동합니다.';timer=setTimeout(finish,35000)}if(!narrationOn){state.textContent='나레이션이 꺼져 있어요. 읽을 시간을 드린 뒤 자동으로 넘어갑니다.';timer=setTimeout(finish,35000);return}if('speechSynthesis'in window&&'SpeechSynthesisUtterance'in window){utter=new SpeechSynthesisUtterance(text);utter.lang='ko-KR';utter.rate=.98;utter.onstart=()=>state.textContent='내레이션을 듣고 있어요…';utter.onend=finish;utter.onerror=fallback;speechSynthesis.speak(utter)}else fallback()}
+document.querySelector('#narration-toggle').addEventListener('click',e=>{narrationOn=!narrationOn;e.currentTarget.textContent=narrationOn?'🔊 내레이션 끄기':'🔇 내레이션 켜기';e.currentTarget.setAttribute('aria-pressed',String(narrationOn));if(lessons.includes(screens[current])){stopVoice();playNarration(screens[current])}});
+document.querySelector('#start').addEventListener('click',()=>show(1));document.querySelectorAll('.next').forEach(b=>b.addEventListener('click',()=>show(current+1)));
+let audio=null,osc=null,gain=null,musicOn=false;document.querySelector('#music').addEventListener('click',e=>{musicOn=!musicOn;e.currentTarget.textContent=musicOn?'♫ 배경음 끄기':'♫ 배경음 켜기';e.currentTarget.setAttribute('aria-pressed',String(musicOn));if(musicOn){const C=window.AudioContext||window.webkitAudioContext;if(!C){musicOn=false;e.currentTarget.textContent='♫ 배경음 사용 불가';return}audio||=new C();audio.resume();gain=audio.createGain();gain.gain.value=.012;gain.connect(audio.destination);osc=audio.createOscillator();osc.type='sine';osc.frequency.value=261.63;osc.connect(gain);osc.start()}else if(osc){osc.stop();osc=null;gain.disconnect();gain=null}});
+const bubbles=['멍멍! 무슨 소리지?','여기는 내 자리야!','화장실은 어디일까?'];let bi=0;setInterval(()=>{const b=document.querySelector('#bubble');if(b)b.textContent=bubbles[bi++%bubbles.length]},1900);
+const qs=[...document.querySelectorAll('.question')];let chosen=[null,null];qs.forEach((q,i)=>{q.querySelectorAll('.answer').forEach(a=>a.addEventListener('click',()=>{if(q.dataset.graded)return;q.querySelectorAll('.answer').forEach(x=>x.classList.remove('selected'));a.classList.add('selected');chosen[i]=a}));q.querySelector('.grade').addEventListener('click',()=>{if(!chosen[i]){q.querySelector('.feedback').textContent='답을 하나 골라주세요.';return}q.dataset.graded='true';const correct=chosen[i].dataset.ok==='true';chosen[i].classList.add(correct?'correct':'incorrect');q.querySelector('.feedback').textContent=correct?'정답이에요. 관찰하고 자극을 줄이는 것이 첫걸음이에요.':'다시 생각해 보세요. 행동 전후 상황과 차분한 대처를 기억해요.';setTimeout(()=>{q.classList.remove('active');if(i===0)qs[1].classList.add('active');else{document.querySelector('#result').classList.add('show');const score=chosen.filter(a=>a?.dataset.ok==='true').length;document.querySelector('#score').textContent='2문제 중 '+score+'문제를 맞혔어요!';document.querySelector('#score-note').textContent=score===2?'좋아요. 강아지의 신호를 살피는 방법을 잘 이해했어요.':'괜찮아요. 요약을 읽고 다음 행동을 관찰해 보세요.'}},850)});});document.querySelector('.back').addEventListener('click',()=>{qs[1].classList.remove('active');qs[0].classList.add('active')});document.querySelector('#to-summary').addEventListener('click',()=>show(6));document.querySelector('#restart').addEventListener('click',()=>{chosen=[null,null];qs.forEach(q=>{q.dataset.graded='';q.classList.remove('active');q.querySelector('.feedback').textContent='';q.querySelectorAll('.answer').forEach(a=>a.classList.remove('selected','correct','incorrect'))});qs[0].classList.add('active');document.querySelector('#result').classList.remove('show');show(0)});
+</script><script>
+function addBackButton(parent, labelText) {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'sound';
+  button.textContent = '← ' + labelText;
+  button.addEventListener('click', () => show(current - 1));
+  parent.prepend(button);
+}
+document.querySelectorAll('.lesson .nav').forEach(nav => addBackButton(nav, '이전 내용'));
+addBackButton(document.querySelector('.quiz-head'), '이전 내용');
+addBackButton(document.querySelector('.summary'), '퀴즈로 돌아가기');
+</script><script>
+const conceptPhotos = [
+  'image.png/jpg.1.png',
+  'image.png/jpg.2.png',
+  'image.png/jpg.3.png',
+  'image.png/jpg.4.png'
+];
+document.querySelectorAll('.lesson .illustration').forEach((box, index) => {
+  const caption = box.querySelector('strong')?.textContent || '';
+  const image = document.createElement('img');
+  image.src = conceptPhotos[index];
+  image.alt = caption;
+  const label = document.createElement('strong');
+  label.textContent = caption;
+  box.replaceChildren(image, label);
+});
+</script><script>
+const sourceNote=document.createElement('aside');
+sourceNote.className='source-note';
+sourceNote.setAttribute('aria-label','이미지 및 행동 정보 출처');
+sourceNote.innerHTML='<div><strong>이미지</strong> · ChatGPT로 생성</div><div><strong>행동 정보</strong> · <a href="https://avsab.org/resources/position-statements/" target="_blank" rel="noopener noreferrer">AVSAB 긍정 강화 훈련 권고</a> · <a href="https://www.rspca.org.uk/adviceandwelfare/pets/dogs/behaviour/barking" target="_blank" rel="noopener noreferrer">RSPCA 짖음 안내</a> · <a href="https://www.rspca.org.uk/adviceandwelfare/pets/dogs/training/toilettraining" target="_blank" rel="noopener noreferrer">배변 훈련 안내</a></div>';
+document.querySelector('.cover .art').append(sourceNote);
+</script><script>
+let narrationRunId = 0;
+window.stopVoice = function () {
+  narrationRunId++;
+  clearTimeout(timer);
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+};
+window.playNarration = function (screen) {
+  const runId = ++narrationRunId;
+  const text = screen.querySelector('.narration p').textContent;
+  const state = screen.querySelector('.voice');
+  const sentences = (text.match(/[^.!?]+[.!?]?/g) || [text]).map(s => s.trim()).filter(Boolean);
+  let index = 0;
+  function finish() {
+    if (runId !== narrationRunId) return;
+    state.textContent = '설명이 끝났어요. 다음 화면으로 이동합니다.';
+    timer = setTimeout(() => { if (current < 4) show(current + 1); }, 600);
+  }
+  function fallback() {
+    if (runId !== narrationRunId) return;
+    state.textContent = '설명을 읽어보세요. 약 35초 뒤 다음 화면으로 이동합니다.';
+    timer = setTimeout(finish, 35000);
+  }
+  if (!narrationOn) {
+    state.textContent = '내레이션이 꺼져 있어요. 읽을 시간을 드린 뒤 자동으로 넘어갑니다.';
+    timer = setTimeout(finish, 35000);
+    return;
+  }
+  if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+    fallback();
+    return;
+  }
+  function speakNext() {
+    if (runId !== narrationRunId) return;
+    if (index >= sentences.length) { finish(); return; }
+    const part = new SpeechSynthesisUtterance(sentences[index++]);
+    part.lang = 'ko-KR';
+    part.rate = 0.88;
+    part.pitch = 1;
+    part.volume = 1;
+    const koreanVoice = speechSynthesis.getVoices().find(v => v.lang.toLowerCase().startsWith('ko'));
+    if (koreanVoice) part.voice = koreanVoice;
+    part.onstart = () => { if (runId === narrationRunId) state.textContent = '또렷하고 차분한 내레이션을 듣고 있어요…'; };
+    part.onend = () => { if (runId === narrationRunId) timer = setTimeout(speakNext, 450); };
+    part.onerror = fallback;
+    speechSynthesis.speak(part);
+  }
+  speakNext();
+};
+</script></body></html>
